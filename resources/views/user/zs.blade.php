@@ -15,6 +15,11 @@
             <td>邮箱</td>
             <td>操作</td>
         </tr>
+        @foreach($data as $v)
+                {{$v->uid}}
+                {{$v->user_name}}
+            @endforeach
+
         @foreach ($data as $v)
             <tr>
                 <td>{{$v->uid}}</td>

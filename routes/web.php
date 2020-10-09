@@ -26,3 +26,24 @@ Route::any('updates{id}','IndexController@updates');
 Route::any('lian1','UserController@index');
 Route::any('lian1tj','UserController@tj');
 Route::any('lian1zs','UserController@zs');
+
+
+Route::any('redis','UserController@redis');
+
+
+/**
+ *注册登录
+ *
+ */
+Route::any('login','LoginController@index');   //注册视图
+Route::any('login1','LoginController@login1');   //注册入库
+Route::any('login2','LoginController@login2');   //登录
+Route::any('login3','LoginController@login3');   //登录验证
+
+
+
+
+
+
+
+

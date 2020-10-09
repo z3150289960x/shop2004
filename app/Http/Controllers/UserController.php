@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redis;
 
 class UserController extends Controller
 {
@@ -25,5 +26,16 @@ class UserController extends Controller
 //        var_dump($data);die;
         return view('user.zs',['data'=>$data]);
 //        dd($data);
+    }
+
+    public function redis(){
+
+        $data = Redis::incr('count');
+        dd($data);
+
+
+        Redis::set('aaa','zhangsan');
+        $v = Redis::get('aaa');
+        dd($v);
     }
 }
