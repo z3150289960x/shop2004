@@ -12,7 +12,7 @@
         @csrf
         <tr>
             <td>用户名</td>
-            <td><input type="text" name="login_name" value="zhangsan" id=""></td>
+            <td><input type="text" name="login_name" W id=""></td>
         </tr>
         <tr>
             <td>密码</td>
